@@ -39,13 +39,14 @@ def get_yahoo_daily_ohlc(symbol="BTC-USD", period="1y"):
 
 
 if __name__ == "__main__":
-    btc_data = get_yahoo_daily_ohlc(symbol="BTC-USD", period="1y")
+    btc_data = get_yahoo_daily_ohlc(symbol="BTC-USD", period="max")
 
     if btc_data is not None:
-        output_filename = "btc_1year_ohlc_yfinance.csv"
+        output_filename = "btc_max_ohlc_yfinance.csv"
 
         # 匯出為 CSV 檔案
         # index=False 避免輸出 DataFrame 的索引欄
         btc_data.to_csv(output_filename, index=False)
 
         print(f"資料已成功匯出至：{output_filename}")
+
