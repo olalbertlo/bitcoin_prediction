@@ -42,10 +42,10 @@ if __name__ == "__main__":
     btc_data = get_yahoo_daily_ohlc(symbol="BTC-USD", period="1y")
 
     if btc_data is not None:
-        output_filename = "btc_1year_ohlc_yfinance.json"
+        output_filename = "btc_1year_ohlc_yfinance.csv"
 
-        # 匯出為 JSON 檔案
-        # orient='records' 將格式輸出為標準的物件陣列: [{"Date":"...", "Open":...}, ...]
-        btc_data.to_json(output_filename, orient='records', indent=4)
+        # 匯出為 CSV 檔案
+        # index=False 避免輸出 DataFrame 的索引欄
+        btc_data.to_csv(output_filename, index=False)
 
         print(f"資料已成功匯出至：{output_filename}")
