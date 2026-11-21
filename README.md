@@ -12,7 +12,7 @@ Next-day BTC-USD closing-price forecasting with GRU, Mamba, and Transformer mode
 
 ## Experiment results (Google Drive)
 
-All experiment outputs are stored here: [btc_transformer_results]([https://drive.google.com/drive/folders/1Sdgu0bI0l2FczlccMIH7PCUjC9cngvH5](https://drive.google.com/drive/folders/1Sdgu0bI0l2FczlccMIH7PCUjC9cngvH5?usp=sharing))
+All experiment outputs are stored here: [btc_transformer_results](https://drive.google.com/drive/folders/1Sdgu0bI0l2FczlccMIH7PCUjC9cngvH5](https://drive.google.com/drive/folders/1Sdgu0bI0l2FczlccMIH7PCUjC9cngvH5?usp=sharing)
 
 | Folder | Contents |
 |---|---|
